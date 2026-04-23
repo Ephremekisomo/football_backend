@@ -4,21 +4,21 @@ services:
     runtime: node
     plan: free
     buildCommand: npm install
-    startCommand: node src/index.js # Assurez-vous que c'est le bon chemin vers votre point d'entrée
+    startCommand: node server.js
     envVars:
       - key: PORT
         value: 10000
       - key: NODE_ENV
         value: production
-      - key: MYSQLHOST
+      - key: DB_HOST
         sync: false
-      - key: MYSQLUSER
+      - key: DB_USER
         sync: false
-      - key: MYSQLPASSWORD
+      - key: DB_PASSWORD
         sync: false
-      - key: MYSQLDATABASE
+      - key: DB_NAME
         sync: false
-      - key: MYSQLPORT
+      - key: DB_PORT
         sync: false
       - key: CORS_ORIGIN
         value: https://ton-front-end.vercel.app # Remplace par l'URL de ton frontend déployé
