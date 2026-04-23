@@ -2,10 +2,10 @@
   "name": "football-management-server",
   "version": "1.0.0",
   "description": "Backend for Football Management System",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node server.js"
+    "dev": "node src/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
