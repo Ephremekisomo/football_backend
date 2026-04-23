@@ -1,8 +1,8 @@
-const app = require('./src/app');
-const pool = require('./src/config/database');
-const createTables = require('./src/config/schema');
-const seedDatabase = require('./src/config/seed');
-const { autoTerminateMatches } = require('./src/middlewares/matchStatusWorker');
+const app = require('./app');
+const pool = require('./config/database');
+const createTables = require('./config/schema');
+const seedDatabase = require('./config/seed');
+const { autoTerminateMatches } = require('./middlewares/matchStatusWorker');
 const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
