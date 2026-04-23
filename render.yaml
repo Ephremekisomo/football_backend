@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: foot-server-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/index.js # Assurez-vous que c'est le bon chemin vers votre point d'entrée
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: MYSQLHOST
+        sync: false
+      - key: MYSQLUSER
+        sync: false
+      - key: MYSQLPASSWORD
+        sync: false
+      - key: MYSQLDATABASE
+        sync: false
+      - key: MYSQLPORT
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://ton-front-end.vercel.app # Remplace par l'URL de ton frontend déployé
+    healthCheckPath: /api/health # Optionnel : si vous avez une route de santé
