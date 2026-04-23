@@ -2,9 +2,10 @@ const mysql = require('mysql2/promise');
 require('dotenv').config();
 
 console.log('=== DB CONFIG DEBUG ===');
-console.log('DB_HOST:', process.env.DB_HOST || 'NON DÉFINI');
+console.log('DB_HOST:', process.env.DB_HOST || 'NON DÉFINI → CRASH ATTENDU SANS VARS');
 console.log('DB_PORT:', process.env.DB_PORT || 'NON DÉFINI');
 console.log('DB_NAME:', process.env.DB_NAME || 'NON DÉFINI');
+console.log('ATTENTION: Ajoutez ces vars sur Render Dashboard !');
 console.log('========================');
 
 const pool = mysql.createPool({

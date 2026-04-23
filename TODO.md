@@ -8,8 +8,8 @@
 1. [x] Modifier `render.yaml` (startCommand + vars DB_*)
 2. [x] Modifier `src/config/database.js` (supprimer localhost fallback + log debug)
 3. [x] Créer `.env.example`
-4. [ ] Push Git → Render redeploy
-5. [ ] Ajouter vars DB_* sur Render Dashboard (Railway MySQL)
+4. [x] Push Git → Render redeploy (logs reçus)
+5. [ ] **CRITIQUE** Ajouter vars DB_* sur Render Dashboard → https://dashboard.render.com → foot-server-api → Environment
 6. [ ] Test `/api/health`
 
 ## ⏳ Après
